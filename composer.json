@@ -58,6 +58,7 @@
         ],
         "run-dev": [
             "docker-compose up -d",
+            "php bin/console doctrine:migrations:migrate",
             "php -S 127.0.0.1:8080 -t ./public"
         ]
     },
